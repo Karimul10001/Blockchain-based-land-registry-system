@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Land Registry</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header class="header">
+            <h1>Blockchain Land Registry</h1>
+            <p>Empowering land ownership through blockchain technology</p>
+        </header>
+
+        <div class="content">
+            <div class="form-container">
+                <h2>Register Your Land</h2>
+                <form id="land-form">
+                    <input type="text" id="owner-name" placeholder="Owner Name" required>
+                    <input type="text" id="land-id" placeholder="Land ID" required>
+                    <input type="text" id="land-location" placeholder="Land Location" required>
+                    <input type="number" id="land-price" placeholder="Land Price (in ETH)" required>
+                    <button type="submit">Register Land</button>
+                </form>
+            </div>
+
+            <div class="wallet-connect">
+                <button id="connectButton">Connect with MetaMask</button>
+                <p id="account"></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Blockchain Land Registry. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
